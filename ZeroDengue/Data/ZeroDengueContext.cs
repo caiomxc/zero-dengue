@@ -14,6 +14,8 @@ namespace ZeroDengue.Data
         {
         }
 
-        public DbSet<ZeroDengue.Models.User> User { get; set; }
+        public DbSet<User> User { get; set; }
+        public DbSet<Complaint> Complaint { get; set; }
+
     }
 }
