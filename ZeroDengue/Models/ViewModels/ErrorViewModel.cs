@@ -1,6 +1,6 @@
 using System;
 
-namespace ZeroDengue.Models
+namespace ZeroDengue.Models.ViewModels
 {
     public class ErrorViewModel
     {
