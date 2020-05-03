@@ -45,12 +45,12 @@ namespace ZeroDengue.Data
             User u9 = new User(9, "Carlos Amado", "amado@gmail.com", "1234567", "73765432103", "42998653241", a2);
             User u10 = new User(10, "Téo Green", "teo@gmail.com", "1234567", "73123456789", "31998653241", a1);
 
-            Complaint c1 = new Complaint(1, 0001, "https://www.folhaonline.es/wp-content/uploads/2015/12/Possivel_Foco05.jpg", "Aqui tem muita caixa d'água assim", a5, Models.Enums.StatusComplaint.Registered, u6);
-            Complaint c2 = new Complaint(2, 0002, "https://www.portal27.com.br/wp-content/uploads/2013/03/2013-03-04-16.26.29.jpg", "Aqui tem muita água parada assim", a9, Models.Enums.StatusComplaint.Canceled, u2);
-            Complaint c3 = new Complaint(3, 0003, "https://dynhb2kccft5e.cloudfront.net/uploads/noticias/lg-ecec05ad-16d2-4229-8a67-d4d19ef91221.jpg", "Aqui tem muita pneu assim", a6, Models.Enums.StatusComplaint.Registered, u5);
-            Complaint c4 = new Complaint(4, 0004, "https://www.jornaldecorupa.com.br/wp-content/uploads/2019/12/465830.jpeg", "Aqui tem muito vaso de planta assim", a4, Models.Enums.StatusComplaint.Registered, u7);
-            Complaint c5 = new Complaint(5, 0005, "https://static5.vvale.com.br/wp-content/uploads/2014/05/Dengue-01.jpg", "Aqui tem muito entulho assim", a5, Models.Enums.StatusComplaint.Pending, u3);
-            Complaint c6 = new Complaint(6, 0006, "https://s03.video.glbimg.com/x720/6880370.jpg", "Aqui tem muita piscina assim", a1, Models.Enums.StatusComplaint.Registered, u10);
+            Complaint c1 = new Complaint(1, 0001, "https://www.folhaonline.es/wp-content/uploads/2015/12/Possivel_Foco05.jpg", "Aqui tem muita caixa d'água assim", a5, Models.Enums.StatusComplaint.Registrado, u6);
+            Complaint c2 = new Complaint(2, 0002, "https://www.portal27.com.br/wp-content/uploads/2013/03/2013-03-04-16.26.29.jpg", "Aqui tem muita água parada assim", a9, Models.Enums.StatusComplaint.Cancelado, u2);
+            Complaint c3 = new Complaint(3, 0003, "https://dynhb2kccft5e.cloudfront.net/uploads/noticias/lg-ecec05ad-16d2-4229-8a67-d4d19ef91221.jpg", "Aqui tem muita pneu assim", a6, Models.Enums.StatusComplaint.Registrado, u5);
+            Complaint c4 = new Complaint(4, 0004, "https://www.jornaldecorupa.com.br/wp-content/uploads/2019/12/465830.jpeg", "Aqui tem muito vaso de planta assim", a4, Models.Enums.StatusComplaint.Registrado, u7);
+            Complaint c5 = new Complaint(5, 0005, "https://static5.vvale.com.br/wp-content/uploads/2014/05/Dengue-01.jpg", "Aqui tem muito entulho assim", a5, Models.Enums.StatusComplaint.Pendente, u3);
+            Complaint c6 = new Complaint(6, 0006, "https://s03.video.glbimg.com/x720/6880370.jpg", "Aqui tem muita piscina assim", a1, Models.Enums.StatusComplaint.Registrado, u10);
 
             _context.User.AddRange(u1, u2, u3, u4, u5, u6, u7, u8, u9, u10);
             _context.Complaint.AddRange(c1, c2, c3, c4, c5, c6);

@@ -1,17 +1,17 @@
 ﻿@model ZeroDengue.Models.User
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detalhes";
 }
 
-<h2>Details</h2>
+<h2>@ViewData["Title"]</h2>
 
 <div>
-    <h4>User</h4>
+    <h4>Usuário</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Name)
+            @*@Html.DisplayNameFor(model => model.Name)*@Nome
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Name)
@@ -23,32 +23,32 @@
             @Html.DisplayFor(model => model.Email)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.Password)
+            @*@Html.DisplayNameFor(model => model.Password)*@Senha
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Password)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.Ssn)
+            @*@Html.DisplayNameFor(model => model.Ssn)*@CPF
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Ssn)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.PhoneNumber)
+            @*@Html.DisplayNameFor(model => model.PhoneNumber)*@Telefone
         </dt>
         <dd>
             @Html.DisplayFor(model => model.PhoneNumber)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.Address)
+            @*@Html.DisplayNameFor(model => model.Address)*@Endereço
         </dt>
         <dd>
-            @Html.DisplayFor(model => model.Address)
+            @*@Html.DisplayFor(model => model.Address)*@ Av Jardim Silva, nº 25, 27947-898, Ervalia - Acre
         </dd>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.UserId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model.UserId" class="btn btn-primary">Editar</a> |
+    <a asp-action="Index" class="btn btn-success">Voltar</a>
 </div>

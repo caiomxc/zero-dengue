@@ -1,0 +1,47 @@
+﻿@model IEnumerable<ZeroDengue.Models.Complaint>
+
+@{
+    ViewData["Title"] = "Denúncias";
+}
+
+    <h2>@ViewData["Title"]</h2>
+
+<p>
+    <a asp-action="Create">Denunciar</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @*@Html.DisplayNameFor(model => model.Picture)*@Foto
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.Description)*@Descrição
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.Status)*@Status
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                <img src="@Html.DisplayFor(modelItem => item.Picture)", height="150", width="250"/>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ComplaintId">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.ComplaintId">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.ComplaintId">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

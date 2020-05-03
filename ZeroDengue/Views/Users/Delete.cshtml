@@ -1,48 +1,48 @@
 ﻿@model ZeroDengue.Models.User
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Excluir";
 }
 
-<h2>Delete</h2>
+    <h2>@ViewData["Title"]</h2>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>Tem certeza que você quer excluir?</h3>
 <div>
-    <h4>User</h4>
+    <h4>Usuário</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Name)
+            @*@Html.DisplayNameFor(model => model.Name)*@Nome
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Name)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.Email)
+            @*@Html.DisplayNameFor(model => model.Email)*@E-mail
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Email)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.Password)
+            @*@Html.DisplayNameFor(model => model.Password)*@Senha
         </dt>
         <dd>
-            @Html.DisplayFor(model => model.Password)
+            @*@Html.DisplayFor(model => model.Password)*@ *****
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.Ssn)
+            @*@Html.DisplayNameFor(model => model.Ssn)*@CPF
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Ssn)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.PhoneNumber)
+            @*@Html.DisplayNameFor(model => model.PhoneNumber)*@Telefone
         </dt>
         <dd>
             @Html.DisplayFor(model => model.PhoneNumber)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.Address)
+            @*@Html.DisplayNameFor(model => model.Address)*@Endereço
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Address)
@@ -51,7 +51,7 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="UserId" />
-        <input type="submit" value="Delete" class="btn btn-default" /> |
-        <a asp-action="Index">Back to List</a>
+        <input type="submit" value="Excluir" class="btn btn-primary" /> |
+        <a asp-action="Index" class="btn btn-success">Voltar</a>
     </form>
 </div>

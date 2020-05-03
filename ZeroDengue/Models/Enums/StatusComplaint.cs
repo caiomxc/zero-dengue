@@ -7,8 +7,8 @@ namespace ZeroDengue.Models.Enums
 {
     public enum StatusComplaint: int
     {
-        Pending = 0,
-        Registered = 1,
-        Canceled = 3
+        Pendente = 0,
+        Registrado = 1,
+        Cancelado = 3
     }
 }
