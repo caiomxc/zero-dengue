@@ -21,7 +21,7 @@ namespace ZeroDengue.Models
 
         }
 
-        public Complaint(int complaintId, int complaintNumber, string picture, string description, Address address, StatusComplaint status)
+        public Complaint(int complaintId, int complaintNumber, string picture, string description, Address address, StatusComplaint status, User user)
         {
             ComplaintId = complaintId;
             ComplaintNumber = complaintNumber;
@@ -29,6 +29,7 @@ namespace ZeroDengue.Models
             Description = description;
             Address = address;
             Status = status;
+            User = user;
         }
     }
 }
